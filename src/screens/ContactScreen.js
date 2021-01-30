@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPhone, FaMailBulk } from 'react-icons/fa';
-import { Container, Row, Col, Card, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import Banner from '../components/Banner';
 import ContactHero from '../components/ContactHero';
 
@@ -52,52 +52,54 @@ const ContactScreen = () => {
 					<Card>
 						<Card.Body>
 							<h3 className='text-center '>Get in Touch</h3>
-							<Form name='contact' action='/contact' method='post'>
+							<form name='contact' action='/contact' method='post'>
 								<input type='hidden' name='form-name' value='contact' />
-								<Form.Group controlId='exampleForm.ControlInput1'>
-									<Form.Label>Name</Form.Label>
-									<Form.Control
+								<div className='mt-2'>
+									<label htmlFor='FullName'>First Name</label>
+									<input
 										required
 										type='text'
-										name='exampleForm.ControlInput1'
-										placeholder='Enter Full Name'
+										placeholder='Full Name'
+										name='FullName'
+										className='w-100 py-2'
+										fluid
 									/>
-								</Form.Group>
-								<Form.Group controlId='exampleForm.ControlInput1'>
-									<Form.Label>Email address</Form.Label>
-									<Form.Control
+								</div>
+								<div className='mt-2'>
+									{' '}
+									<label htmlFor='Email'>Email</label>
+									<input
 										required
-										type='email'
-										name='exampleForm.ControlInput1'
-										placeholder='name@example.com'
+										type='text '
+										placeholder='Email'
+										name='Email'
+										className='w-100 py-2'
 									/>
-									<Form.Text className='text-muted'>
-										We'll never share your email with anyone else.
-									</Form.Text>
-								</Form.Group>
-								<Form.Group controlId='exampleForm.ControlInput1'>
-									<Form.Label>Phone Number</Form.Label>
-									<Form.Control
+								</div>
+								<div className='mt-2'>
+									<label htmlFor='PhoneNumber'>Phone Number</label>
+									<input
 										required
 										type='number'
-										name='exampleForm.ControlInput1'
 										placeholder='Phone Number'
+										name='PhoneNumber'
+										className='w-100 py-2'
 									/>
-								</Form.Group>
-
-								<Form.Group controlId='exampleForm.ControlTextarea1'>
-									<Form.Label>Message</Form.Label>
-									<Form.Control
+								</div>
+								<div className='mt-2'>
+									<label htmlFor='Message'>Message</label>
+									<textarea
 										required
-										as='textarea'
-										name='exampleForm.ControlTextarea1'
-										placeholder='Enter Your Message'
-									/>
-								</Form.Group>
-								<Button type='submit' className='btn'>
-									Send
-								</Button>
-							</Form>
+										placeholder='Message'
+										name='Message'
+										className='w-100 py-2'></textarea>
+								</div>
+								<div>
+									<button type='submit' className='btn-dark submit-contact w-100 py-2'>
+										Submit
+									</button>
+								</div>
+							</form>
 						</Card.Body>
 					</Card>
 				</Col>

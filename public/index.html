@@ -11,30 +11,25 @@
 	</head>
 	<body>
 		<form name="contact" netlify netlify-honeypot="bot-field" hidden>
-			<Form.Group controlId="exampleForm.ControlInput1">
-				<Form.Label>Name</Form.Label>
-				<Form.Control required type="text" name="exampleForm.ControlInput1" placeholder="Enter Full Name" />
-			</Form.Group>
-			<Form.Group controlId="exampleForm.ControlInput1">
-				<Form.Label>Email address</Form.Label>
-				<Form.Control required type="email" name="exampleForm.ControlInput1" placeholder="name@example.com" />
-				<Form.Text className="text-muted"> We'll never share your email with anyone else. </Form.Text>
-			</Form.Group>
-			<Form.Group controlId="exampleForm.ControlInput1">
-				<Form.Label>Phone Number</Form.Label>
-				<Form.Control required type="number" name="exampleForm.ControlInput1" placeholder="Phone Number" />
-			</Form.Group>
-
-			<Form.Group controlId="exampleForm.ControlTextarea1">
-				<Form.Label htmlFor="Message">Message</Form.Label>
-				<Form.Control
-					required
-					as="textarea"
-					name="exampleForm.ControlTextarea1"
-					placeholder="Enter Your Message"
-				/>
-			</Form.Group>
+			<div className="mt-2">
+				<label htmlFor="FullName">First Name</label>
+				<input type="text" placeholder="Full Name" name="FullName" className="w-100 py-2" fluid />
+			</div>
+			<div className="mt-2">
+				{' '}
+				<label htmlFor="Email">Email</label>
+				<input type="text " placeholder="Email" name="Email" className="w-100 py-2" />
+			</div>
+			<div className="mt-2">
+				<label htmlFor="PhoneNumber">Phone Number</label>
+				<input type="number" placeholder="Phone Number" name="PhoneNumber" className="w-100 py-2" />
+			</div>
+			<div className="mt-2">
+				<label htmlFor="Message">Message</label>
+				<textarea id="" placeholder="Message" name="Message" className="w-100 py-2"></textarea>
+			</div>
 		</form>
+
 		<noscript>You need to enable JavaScript to run this app.</noscript>
 		<div id="root"></div>
 	</body>
