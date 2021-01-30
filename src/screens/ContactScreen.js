@@ -56,30 +56,43 @@ const ContactScreen = () => {
 								<input type='hidden' name='form-name' value='contact' />
 								<Form.Group controlId='exampleForm.ControlInput1'>
 									<Form.Label>Name</Form.Label>
-									<Form.Control required type='text' name='Name' placeholder='Enter Full Name' />
+									<Form.Control
+										required
+										type='text'
+										name='exampleForm.ControlInput1'
+										placeholder='Enter Full Name'
+									/>
 								</Form.Group>
 								<Form.Group controlId='exampleForm.ControlInput1'>
 									<Form.Label>Email address</Form.Label>
 									<Form.Control
 										required
 										type='email'
-										name='Email address'
+										name='exampleForm.ControlInput1'
 										placeholder='name@example.com'
 									/>
+									<Form.Text className='text-muted'>
+										We'll never share your email with anyone else.
+									</Form.Text>
 								</Form.Group>
 								<Form.Group controlId='exampleForm.ControlInput1'>
 									<Form.Label>Phone Number</Form.Label>
 									<Form.Control
 										required
 										type='number'
-										name='Phone Number'
+										name='exampleForm.ControlInput1'
 										placeholder='Phone Number'
 									/>
 								</Form.Group>
 
 								<Form.Group controlId='exampleForm.ControlTextarea1'>
 									<Form.Label>Message</Form.Label>
-									<Form.Control required as='textarea' name='Message' />
+									<Form.Control
+										required
+										as='textarea'
+										name='exampleForm.ControlTextarea1'
+										placeholder='Enter Your Message'
+									/>
 								</Form.Group>
 								<Button type='submit' className='btn'>
 									Send
