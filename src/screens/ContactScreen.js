@@ -70,7 +70,7 @@ const ContactScreen = () => {
 									<label htmlFor='Email'>Email</label>
 									<input
 										required
-										type='text '
+										type='email '
 										placeholder='Email'
 										name='Email'
 										className='w-100 py-2'
