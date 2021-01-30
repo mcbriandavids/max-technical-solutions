@@ -56,20 +56,30 @@ const ContactScreen = () => {
 								<input type='hidden' name='form-name' value='contact' />
 								<Form.Group controlId='exampleForm.ControlInput1'>
 									<Form.Label>Name</Form.Label>
-									<Form.Control required type='text' name='name' placeholder='Enter Full Name' />
+									<Form.Control required type='text' name='Name' placeholder='Enter Full Name' />
 								</Form.Group>
 								<Form.Group controlId='exampleForm.ControlInput1'>
 									<Form.Label>Email address</Form.Label>
-									<Form.Control required type='email' name='email' placeholder='name@example.com' />
+									<Form.Control
+										required
+										type='email'
+										name='Email address'
+										placeholder='name@example.com'
+									/>
 								</Form.Group>
 								<Form.Group controlId='exampleForm.ControlInput1'>
 									<Form.Label>Phone Number</Form.Label>
-									<Form.Control required type='number' name='number' placeholder='Phone Number' />
+									<Form.Control
+										required
+										type='number'
+										name='Phone Number'
+										placeholder='Phone Number'
+									/>
 								</Form.Group>
 
 								<Form.Group controlId='exampleForm.ControlTextarea1'>
 									<Form.Label>Message</Form.Label>
-									<Form.Control required as='textarea' name='message' />
+									<Form.Control required as='textarea' name='Message' />
 								</Form.Group>
 								<Button type='submit' className='btn'>
 									Send
@@ -84,3 +94,17 @@ const ContactScreen = () => {
 };
 
 export default ContactScreen;
+<form name='contact' action='/contact' method='post' className='join-form'>
+	<input type='hidden' name='form-name' value='contact' />
+	<label htmlFor='FirstName'>First Name</label>
+	<input type='text' required name='FirstName' placeholder='Your First Name' />
+	<label htmlFor='LastName'>Last Name</label>
+	<input type='text' required name='LastName' placeholder='Your Last Name' />
+	<label htmlFor='Email'>Email</label>
+	<input type='text' required name='Email' placeholder='Your Email' />
+	<label htmlFor='PhoneNumber'>Phone Number</label>
+	<input type='number' required name='Email' placeholder='Your Phone Number' />
+	<button type='submit' className='btn-primary submit-btn'>
+		Submit
+	</button>
+</form>;
