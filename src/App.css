@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: 'Poppins' Arial, Helvetica, sans-serif;
+}
+main {
+	min-height: 80vh;
+}
+.banner {
+	display: inline-block;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding: 2rem 1rem;
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: var(--mainSpacing);
+}
+/* Carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item-active {
+	display: flex;
+}
+.carouse-caption {
+	position: absolute;
+	top: 0;
+}
+.carouse-caption h2 {
+	color: #fff;
+}
+.carousel img {
+	height: 400px;
+	padding: 30px;
+	margin: 40px;
+	border-radius: 50%;
+}
+.carousel a {
+	margin: 0 auto;
+}
+/* Hero */
+.defaultHero {
+	min-height: 50vh;
+	background: url('./assets/lightblue.jpg') center/cover no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.8;
+}
+
+.defaultContactHero {
+	min-height: 50vh;
+	background: url('./assets/contact1.jpg') center/cover no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.8;
+}
+.nav-link {
+	font-size: 1rem;
+	font-weight: bold;
+	color: #000 !important;
+}
+.nav-link:hover {
+	color: #0ac0f9 !important;
+	transition: 1s ease-in-out;
+}
+.btn {
+	background: #0ac0f9;
+	border: none;
+}
+.footer-text {
+	font-size: 1.1rem;
+}
