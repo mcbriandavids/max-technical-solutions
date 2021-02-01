@@ -10,18 +10,23 @@ class ContextProvider extends Component {
 		featuredProducts: [],
 		sortedProducts: [],
 		loading: true,
-		someBrands: []
+		someBrands: [],
+		addInfo: []
 	};
 	componentDidMount() {
 		let products = this.formatData(items);
 		let brand = this.brandData(brands);
 		let featuredProducts = products.filter((product) => product.featured === true);
+
+		let addProducts = products.filter((product) => product.other === true);
+
 		this.setState({
 			products,
 			featuredProducts,
 			sortedProducts: products,
 			loading: false,
-			someBrands: brand
+			someBrands: brand,
+			addInfo: addProducts
 		});
 	}
 
@@ -44,6 +49,7 @@ class ContextProvider extends Component {
 		});
 		return tempBrands;
 	}
+
 	// Single Product
 	getSingleProduct = (slug) => {
 		let tempProduct = [...this.state.products];

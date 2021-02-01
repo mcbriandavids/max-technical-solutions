@@ -58,6 +58,16 @@ main {
 	justify-content: center;
 	opacity: 0.8;
 }
+/* Services Icon */
+.col-services span {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+}
+.col-services .icon {
+	color: #0ac0f9 !important;
+	transition: 2s ease-in-out;
+}
+
 .nav-link {
 	font-size: 1rem;
 	font-weight: bold;

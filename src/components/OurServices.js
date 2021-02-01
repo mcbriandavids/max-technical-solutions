@@ -33,9 +33,9 @@ export default class OurServices extends Component {
 				<Row>
 					{this.state.services.map((service, id) => {
 						return (
-							<Col key={id} md={6} xl={4} className='text-center py-3'>
+							<Col key={id} md={6} xl={4} className='text-center py-3 col-services'>
 								<article key={id} className='service'>
-									<p className='icon'>{service.icon}</p>
+									<span className='icon'>{service.icon}</span>
 									<h3>{service.title}</h3>
 									<p className='text-justify'>{service.details}</p>
 								</article>

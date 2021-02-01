@@ -62,7 +62,6 @@ const ContactScreen = () => {
 										placeholder='Full Name'
 										name='FullName'
 										className='w-100 py-2'
-										fluid
 									/>
 								</div>
 								<div className='mt-2'>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel, Image } from 'react-bootstrap';
 import { ProductConsumer } from '../Context';
@@ -6,6 +6,7 @@ import uuid from 'react-uuid';
 
 const ProductCarousel = () => {
 	const id = uuid();
+	const ref = useRef(null);
 	return (
 		<ProductConsumer>
 			{(value) => {
@@ -13,7 +14,7 @@ const ProductCarousel = () => {
 				return (
 					<Carousel pause='hover' className='bg-dark'>
 						{featuredProducts.map((product, index) => (
-							<Carousel.Item key={index} className='text-center'>
+							<Carousel.Item key={index} className='text-center' refs={ref}>
 								<Link to={`/products/${product.slug}/${id}`}>
 									<Carousel.Caption className='carousel-caption'>
 										<h2>{product.name}</h2>

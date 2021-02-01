@@ -40,6 +40,7 @@ const data = [
 			name: 'Product One',
 			slug: 'product-one',
 			featured: true,
+			other: true,
 			description:
 				'	Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vel, tempora totam, labore accusamus dolorum fugiat ratione itaque minus, autem sapiente nihil. Ullam dolor similique praesentium dolorem, eos necessitatibus quam!',
 
@@ -91,6 +92,7 @@ const data = [
 			name: 'Product two',
 			slug: 'product-two',
 			featured: true,
+			other: true,
 			description:
 				'	Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vel, tempora totam, labore accusamus dolorum fugiat ratione itaque minus, autem sapiente nihil. Ullam dolor similique praesentium dolorem, eos necessitatibus quam!',
 
@@ -142,6 +144,7 @@ const data = [
 			name: 'Product three',
 			slug: 'product-three',
 			featured: true,
+			other: true,
 			description:
 				'	Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vel, tempora totam, labore accusamus dolorum fugiat ratione itaque minus, autem sapiente nihil. Ullam dolor similique praesentium dolorem, eos necessitatibus quam!',
 
@@ -193,6 +196,7 @@ const data = [
 			name: 'Product four',
 			slug: 'product-four',
 			featured: true,
+			other: true,
 			description:
 				'	Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vel, tempora totam, labore accusamus dolorum fugiat ratione itaque minus, autem sapiente nihil. Ullam dolor similique praesentium dolorem, eos necessitatibus quam!',
 
