@@ -6,7 +6,7 @@ import uuid from 'react-uuid';
 
 const ProductCarousel = () => {
 	const id = uuid();
-	const ref = useRef(null);
+	const ref = useRef();
 	return (
 		<ProductConsumer>
 			{(value) => {

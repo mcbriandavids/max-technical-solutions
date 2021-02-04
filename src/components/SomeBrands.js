@@ -14,7 +14,7 @@ const SomeBrands = ({ brand }) => {
 	return (
 		<>
 			<Card className='my-3 p-3 mx-4 rounded'>
-				<Card.Img src={brand} w-50 variant='top' alt='Brand' ref={(el) => (brands = el)} />
+				<Card.Img src={brand} w-50='true' variant='top' alt='Brand' ref={(el) => (brands = el)} />
 			</Card>
 		</>
 	);

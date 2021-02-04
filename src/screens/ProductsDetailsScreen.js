@@ -3,16 +3,16 @@ import { ProductConsumer } from '../Context';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Image, ListGroup } from 'react-bootstrap';
 import Title from '../components/Title';
-import uuid from 'react-uuid';
+import YouMayAlsoLike from '../components/YouMayAlsoLike';
 
 const ProductsDetailsScreen = (props) => {
 	const slug = props.match.params.slug;
-	const id = uuid();
+
 	return (
 		<Container>
 			<ProductConsumer>
 				{(value) => {
-					const { getSingleProduct, addInfo } = value;
+					const { getSingleProduct } = value;
 
 					const product = getSingleProduct(slug);
 					if (!product) {
@@ -50,17 +50,7 @@ const ProductsDetailsScreen = (props) => {
 										</ListGroup.Item>
 									</ListGroup>
 									<Title title='You may also like' />
-									<Col md={12} className='add-info d-flex mt-3'>
-										{addInfo.map((image, index) => (
-											<Image
-												src={image.images[0]}
-												variant='top'
-												className='w-25 px-2'
-												fluid
-												key={index}
-											/>
-										))}
-									</Col>
+									<YouMayAlsoLike />
 								</Col>
 							</Row>
 						</Container>

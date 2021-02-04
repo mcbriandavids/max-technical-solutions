@@ -6,7 +6,6 @@ import uuid from 'react-uuid';
 import { gsap } from 'gsap';
 
 const ProductsList = ({ children, wrapperElement = 'div', direction = null, delay = 0, products }) => {
-	console.log(products);
 	const id = uuid();
 	const Component = wrapperElement;
 	let compRef = useRef(null);
