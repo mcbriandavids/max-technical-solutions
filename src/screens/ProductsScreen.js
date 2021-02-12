@@ -1,24 +1,12 @@
-import React from 'react';
-import { ProductConsumer } from '../Context';
+import React, { useContext } from 'react';
+import { ProductContext } from '../Context';
 import ProductsList from '../components/ProductsList';
 import Loader from '../components/Loader';
 
 const ProductsScreen = () => {
-	return (
-		<ProductConsumer>
-			{(value) => {
-				const { sortedProducts, loading } = value;
-				if (loading) {
-					return <Loader />;
-				}
-				return (
-					<>
-						<ProductsList products={sortedProducts} />
-					</>
-				);
-			}}
-		</ProductConsumer>
-	);
+	const { sortedProducts, loading } = useContext(ProductContext);
+
+	return <>{loading ? <Loader /> : <ProductsList products={sortedProducts} />}</>;
 };
 
 export default ProductsScreen;

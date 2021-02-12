@@ -17,7 +17,7 @@ const ContactScreen = () => {
 							<Card.Title as='div'>
 								<h3>How to find Us</h3>
 							</Card.Title>
-							<span> Please feel free to contact as follows;</span>
+							<small> Please feel free to contact as follows;</small>
 							<h5>
 								33 Pa Josiah Street,
 								<br />
@@ -52,7 +52,7 @@ const ContactScreen = () => {
 					<Card>
 						<Card.Body>
 							<h3 className='text-center '>Get in Touch</h3>
-							<form name='contact' action='/contact' method='post'>
+							<form name='contact' action='/success/' method='post'>
 								<input type='hidden' name='form-name' value='contact' />
 								<div className='mt-2'>
 									<label htmlFor='FullName'>First Name</label>

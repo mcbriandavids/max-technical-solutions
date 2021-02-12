@@ -1,19 +1,24 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Loader from './Loader';
 import PropTypes from 'prop-types';
 import uuid from 'react-uuid';
 
 const ProductDetails = ({ product }) => {
-	const { images, slug, name } = product;
+	const { images, slug, name, loading } = product;
 	const id = uuid();
 
 	return (
 		<>
 			<Card className='my-3 p-3 mx-4 ' rounded='true'>
-				<Link to={`/products/${slug}/${id}`}>
-					<Card.Img src={images[0]} variant='top' />
-				</Link>
+				{loading ? (
+					<Loader />
+				) : (
+					<Link to={`/products/${slug}/${id}`}>
+						<Card.Img src={images[0]} variant='top' />
+					</Link>
+				)}
 				<Card.Body>
 					<Card.Title as='div' className='text-center text-capitalize'>
 						<Link to={`/products/${slug}/${id}`} className='text-decoration-none'>
