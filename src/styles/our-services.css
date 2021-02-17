@@ -4,12 +4,12 @@
 	margin-bottom: 1.5rem;
 }
 .col-services .icon {
-	color: #0ac0f9 !important;
+	color: var(--background-color) !important;
 	transition: 2s;
 }
 .icon:hover {
 	color: #000 !important;
-	background: #0ac0f9 !important;
+	background: var(--background-color) !important;
 	padding: 0.5rem;
 	border-radius: 50%;
 }
