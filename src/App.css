@@ -1,3 +1,10 @@
+:root {
+	--default-background-color: #aaaa;
+	--background-color: #0ac0f9;
+	--text-color: #fff;
+	--default-text-color: #000;
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -12,34 +19,13 @@ main {
 .banner {
 	display: inline-block;
 	background: rgba(0, 0, 0, 0.5);
-	color: #fff;
+	color: var(--text-color);
 	padding: 2rem 1rem;
 	text-align: center;
 	text-transform: capitalize;
 	letter-spacing: var(--mainSpacing);
 }
-/* Carousel */
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item-active {
-	display: flex;
-}
-.carouse-caption {
-	position: absolute;
-	top: 0;
-}
-.carouse-caption h2 {
-	color: #fff;
-}
-.carousel img {
-	height: 450px;
-	padding: 30px;
-	margin: 40px;
-	border-radius: 50%;
-}
-.carousel a {
-	margin: 0 auto;
-}
+
 /* Hero */
 .defaultHero {
 	min-height: 50vh;
@@ -58,15 +44,6 @@ main {
 	justify-content: center;
 	opacity: 0.8;
 }
-/* Services Icon */
-.col-services span {
-	font-size: 2rem;
-	margin-bottom: 1.5rem;
-}
-.col-services .icon {
-	color: #0ac0f9 !important;
-	transition: 2s ease-in-out;
-}
 
 .nav-link {
 	font-size: 1rem;
@@ -74,26 +51,6 @@ main {
 	color: #000 !important;
 }
 .nav-link:hover {
-	color: #0ac0f9 !important;
+	color: var(--background-color) !important;
 	transition: 1s ease-in-out;
-}
-.btn {
-	background: #0ac0f9;
-	border: none;
-}
-
-/* Contact Form */
-.submit-contact {
-	background: #0ac0f9;
-	color: #fff;
-	border: none;
-}
-.submit-contact:hover {
-	background: none;
-	color: #000;
-	transition: 2s ease-in-out;
-}
-
-.footer-text {
-	font-size: 1.1rem;
 }

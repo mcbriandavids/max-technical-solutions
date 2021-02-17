@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Title from './Title';
 import uuid from 'react-uuid';
 import { gsap } from 'gsap';
+import StyledButton from './Button';
 
 const ProductsList = ({ children, wrapperElement = 'div', direction = null, delay = 0, products }) => {
 	const id = uuid();
@@ -52,11 +53,16 @@ const ProductsList = ({ children, wrapperElement = 'div', direction = null, dela
 											<p>{product.name}</p>
 											<Link
 												to={`/products/${product.slug}/${id}`}
-												className='text-decoration-none text-dark'>
-												<span> View Details</span>
-											</Link>
+												className='text-decoration-none text-dark'></Link>
 										</Card.Title>
 									</Card.Body>
+									<StyledButton>
+										<Link
+											to={`/products/${product.slug}/${id}`}
+											className=' text-dark text-decoration-none   '>
+											View Details
+										</Link>
+									</StyledButton>
 								</Card>
 							</Col>
 						))}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { FaCloud, FaTools, FaBuilding } from 'react-icons/fa';
 import { Row, Col, Container } from 'react-bootstrap';
 import Title from './Title';
+import '../styles/our-services.css';
 
 export default class OurServices extends Component {
 	state = {

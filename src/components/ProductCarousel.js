@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Carousel, Image } from 'react-bootstrap';
 import { ProductConsumer } from '../Context';
 import uuid from 'react-uuid';
+import '../styles/carousel.css';
 
 const ProductCarousel = () => {
 	const id = uuid();
@@ -19,7 +20,7 @@ const ProductCarousel = () => {
 									<Carousel.Caption className='carousel-caption'>
 										<h2>{product.name}</h2>
 									</Carousel.Caption>
-									<Image src={product.images[0]} alt={product.name} fluid />
+									<Image src={product.images[0]} alt={product.name} />
 								</Link>
 							</Carousel.Item>
 						))}

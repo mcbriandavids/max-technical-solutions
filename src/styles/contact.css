@@ -1,0 +1,40 @@
+:root {
+	--border-size: 2px;
+	--default-background-color: #aaaa;
+	--background-color: #0ac0f9;
+	--text-color: #fff;
+}
+
+.submit-contact {
+	background-color: var(--default-background-color);
+	color: #000;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+.submit-contact::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: var(--background-color);
+	z-index: -1;
+
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 300ms ease-in-out;
+}
+.submit-contact:hover::before,
+.submit-contact:focus::before {
+	transform: scaleX(1);
+}
+.submit-contact {
+	z-index: 1;
+}
+.submit-contact:hover,
+.submit-contact:focus {
+	color: var(--text-color);
+}

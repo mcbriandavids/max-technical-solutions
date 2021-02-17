@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Loader from './Loader';
 import PropTypes from 'prop-types';
 import uuid from 'react-uuid';
+import StyledButton from './Button';
 
 const ProductDetails = ({ product }) => {
 	const { images, slug, name, loading } = product;
@@ -21,9 +22,13 @@ const ProductDetails = ({ product }) => {
 				)}
 				<Card.Body>
 					<Card.Title as='div' className='text-center text-capitalize'>
-						<Link to={`/products/${slug}/${id}`} className='text-decoration-none'>
-							<strong className='text-dark'>{name}</strong>
-						</Link>
+						<StyledButton>
+							<Link
+								to={`/products/${slug}/${id}`}
+								className='text-decoration-none  text-center text-dark'>
+								<strong className='text-dark '>{name}</strong>
+							</Link>
+						</StyledButton>
 					</Card.Title>
 				</Card.Body>
 			</Card>

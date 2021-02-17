@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ProductConsumer } from '../Context';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Image, ListGroup } from 'react-bootstrap';
@@ -60,5 +61,4 @@ const ProductsDetailsScreen = (props) => {
 		</Container>
 	);
 };
-
 export default ProductsDetailsScreen;

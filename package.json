@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "gsap": "^3.6.0",
     "react": "^16.14.0",
+    "react-animation": "^1.2.2",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",

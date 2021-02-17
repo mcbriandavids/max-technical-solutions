@@ -3,6 +3,7 @@ import { FaPhone, FaMailBulk } from 'react-icons/fa';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import Banner from '../components/Banner';
 import ContactHero from '../components/ContactHero';
+import StyledButton from '../components/Button';
 
 const ContactScreen = () => {
 	return (
@@ -17,7 +18,7 @@ const ContactScreen = () => {
 							<Card.Title as='div'>
 								<h3>How to find Us</h3>
 							</Card.Title>
-							<small> Please feel free to contact as follows;</small>
+							<span> Please feel free to contact as follows;</span>
 							<h5>
 								33 Pa Josiah Street,
 								<br />
@@ -52,7 +53,13 @@ const ContactScreen = () => {
 					<Card>
 						<Card.Body>
 							<h3 className='text-center '>Get in Touch</h3>
-							<form name='contact' action='/success/' method='post'>
+							<form
+								name='contact'
+								method='post'
+								action='/success/'
+								data-netlify='true'
+								onSubmit='submit'
+								data-netlify-honeypot='bot-field'>
 								<input type='hidden' name='form-name' value='contact' />
 								<div className='mt-2'>
 									<label htmlFor='FullName'>First Name</label>
@@ -93,11 +100,9 @@ const ContactScreen = () => {
 										name='Message'
 										className='w-100 py-2'></textarea>
 								</div>
-								<div>
-									<button type='submit' className='btn-dark submit-contact w-100 py-2'>
-										Submit
-									</button>
-								</div>
+								<button type='submit' className=' text-uppercase w-100 '>
+									<StyledButton>Submit</StyledButton>
+								</button>
 							</form>
 						</Card.Body>
 					</Card>

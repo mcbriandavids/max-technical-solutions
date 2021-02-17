@@ -1,0 +1,15 @@
+/* Services Icon */
+.col-services span {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+}
+.col-services .icon {
+	color: #0ac0f9 !important;
+	transition: 2s;
+}
+.icon:hover {
+	color: #000 !important;
+	background: #0ac0f9 !important;
+	padding: 0.5rem;
+	border-radius: 50%;
+}
