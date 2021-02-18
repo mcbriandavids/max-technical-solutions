@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 
 const StyledButton = styled.header`
-	background-color: var(--default-background-color);
-	color: var(--default-text-color) !important;
-	position: relative;
-	cursor: pointer;
-	outline: none;
-	border: none;
-	padding: 0.5rem;
-	text-align: center;
-	text-decoration: none !important;
+	 {
+		background-color: var(--default-background-color);
+		color: var(--default-text-color) !important;
+		position: relative;
+		cursor: pointer;
+		outline: none;
+		border: none;
+		padding: 0.5rem;
+		text-align: center;
+		text-decoration: none !important;
+	}
 
 	::before {
 		content: '';

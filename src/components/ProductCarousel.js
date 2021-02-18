@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Carousel, Image } from 'react-bootstrap';
 import { ProductConsumer } from '../Context';
@@ -7,7 +7,7 @@ import '../styles/carousel.css';
 
 const ProductCarousel = () => {
 	const id = uuid();
-	const ref = useRef();
+
 	return (
 		<ProductConsumer>
 			{(value) => {
@@ -15,7 +15,7 @@ const ProductCarousel = () => {
 				return (
 					<Carousel pause='hover' className='bg-dark'>
 						{featuredProducts.map((product, index) => (
-							<Carousel.Item key={index} className='text-center' refs={ref}>
+							<Carousel.Item key={index} className='text-center'>
 								<Link to={`/products/${product.slug}/${id}`}>
 									<Carousel.Caption className='carousel-caption'>
 										<h2>{product.name}</h2>

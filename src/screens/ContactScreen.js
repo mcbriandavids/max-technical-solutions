@@ -56,7 +56,7 @@ const ContactScreen = () => {
 							<form
 								name='contact'
 								method='post'
-								action='/success/'
+								action='/success'
 								data-netlify='true'
 								onSubmit='submit'
 								data-netlify-honeypot='bot-field'>

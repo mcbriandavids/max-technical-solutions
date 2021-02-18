@@ -1,10 +1,10 @@
 import React from 'react';
-
 import { ProductConsumer } from '../Context';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Image, ListGroup } from 'react-bootstrap';
 import Title from '../components/Title';
 import YouMayAlsoLike from '../components/YouMayAlsoLike';
+import StyledButton from '../components/Button';
 
 const ProductsDetailsScreen = (props) => {
 	const slug = props.match.params.slug;
@@ -21,7 +21,7 @@ const ProductsDetailsScreen = (props) => {
 							<div>
 								<h3 className='text-capitalize'>no such product could be found</h3>
 								<Link to='/products' className='btn btn-dark mb-5'>
-									Go to products{' '}
+									<StyledButton>Go to products </StyledButton>
 								</Link>
 							</div>
 						);
@@ -30,7 +30,7 @@ const ProductsDetailsScreen = (props) => {
 					return (
 						<Container>
 							<Link to='/products' className='btn btn-dark mb-5'>
-								Go to products{' '}
+								Go to products
 							</Link>
 							<Row>
 								<Col md={6}>

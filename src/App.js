@@ -24,7 +24,7 @@ const App = () => {
 						<Route exact path='/contact' component={ContactScreen} />
 						<Route exact path='/products' component={ProductsScreen} />
 						<Route exact path='/products/:slug/:id' component={ProductsDetailsScreen} />
-						<Route exact path='/contact/success' component={SuccessScreen} />
+						<Route exact path='/success' component={SuccessScreen} />
 					</Switch>
 				</Container>
 			</main>
