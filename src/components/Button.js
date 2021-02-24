@@ -30,6 +30,7 @@ const StyledButton = styled.header`
 	:hover::before,
 	:focus::before {
 		transform: scaleX(1);
+		color: var(--text-color) !important;
 	}
 	 {
 		z-index: 1;

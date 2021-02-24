@@ -8,6 +8,9 @@ import ProductsDetailsScreen from './screens/ProductsDetailsScreen';
 import HomeScreen from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';
 import ContactScreen from './screens/ContactScreen';
+import DevelopmentScreen from './screens/DevelopmentScreen';
+import ResearchScreen from './screens/ResearchScreen';
+import TrainingScreen from './screens/TrainingScreen';
 import './App.css';
 
 import SuccessScreen from './screens/SuccessScreen';
@@ -24,6 +27,9 @@ const App = () => {
 						<Route exact path='/contact' component={ContactScreen} />
 						<Route exact path='/products' component={ProductsScreen} />
 						<Route exact path='/products/:slug/:id' component={ProductsDetailsScreen} />
+						<Route exact path='/services/development' component={DevelopmentScreen} />
+						<Route exact path='/services/training' component={TrainingScreen} />
+						<Route exact path='/services/research' component={ResearchScreen} />
 						<Route exact path='/success' component={SuccessScreen} />
 					</Switch>
 				</Container>

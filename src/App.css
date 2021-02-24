@@ -3,6 +3,8 @@
 	--background-color: #0ac0f9;
 	--text-color: #fff;
 	--default-text-color: #000;
+	--letter-spacing: 0.1rem;
+	--line-height: 1.5rem;
 }
 
 * {
@@ -39,6 +41,7 @@ main {
 .defaultContactHero {
 	min-height: 50vh;
 	background: url('./assets/contact1.jpg') center/cover no-repeat;
+	object-fit: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -53,4 +56,17 @@ main {
 .nav-link:hover {
 	color: var(--background-color) !important;
 	transition: 1s ease-in-out;
+}
+
+a {
+	color: var(--default-text-color);
+	text-decoration: none;
+}
+a:hover {
+	color: var(--text-color);
+}
+.worker-img {
+	width: 538px;
+	height: 600px;
+	object-fit: cover;
 }

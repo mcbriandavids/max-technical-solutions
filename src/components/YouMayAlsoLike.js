@@ -12,7 +12,7 @@ const YouMayAlsoLike = () => {
 
 	return (
 		<Row>
-			<Col md={12} className='add-info d-flex mt-3'>
+			<Col className='add-info d-flex mt-3'>
 				{addInfo.map((item, index) =>
 					loading ? (
 						<Loader />

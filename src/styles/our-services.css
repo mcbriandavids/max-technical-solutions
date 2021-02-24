@@ -3,13 +3,12 @@
 	font-size: 2rem;
 	margin-bottom: 1.5rem;
 }
-.col-services .icon {
+.icon {
 	color: var(--background-color) !important;
 	transition: 2s;
+	transform: scale(0.5);
 }
 .icon:hover {
 	color: #000 !important;
-	background: var(--background-color) !important;
-	padding: 0.5rem;
-	border-radius: 50%;
+	transform: scale(0.5) translateY(-15px);
 }

@@ -1,0 +1,15 @@
+.development {
+	background: var(--background-color);
+	color: var(--text-color);
+	letter-spacing: var(--letter-spacing);
+	transition: 3s ease-in-out;
+	border-radius: 0.5rem;
+}
+.development:hover {
+	transform: translateY(-15px);
+	color: var(--default-text-color);
+	background: var(--text-color);
+}
+.img1 {
+	height: 126vh;
+}

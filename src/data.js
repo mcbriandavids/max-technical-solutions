@@ -24,7 +24,7 @@ import product23 from './assets/productOne.svg';
 import product24 from './assets/productOne.svg';
 
 /* Products Categories*/
-import catOne from './assets/cat-one.svg';
+import catOne from './assets/img5.jpg';
 import catTwo from './assets/cat-two.svg';
 import catThree from './assets/cat-three.svg';
 import catFour from './assets/cat-four.svg';
